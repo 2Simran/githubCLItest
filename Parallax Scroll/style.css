@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #070707;
+    min-height: 100vh;
+    overflow-x:hidden;
+    cursor: none;
+}
+
+
+/* body{
+    height: 100vh;
+    background-color: black;
+    cursor:none;
+} */
+/* -----------cursor code----------- */
+.cursor-dot{
+    width: 7px;
+    height: 7px;
+    background-color: aliceblue;
+}
+
+.cursor-outline{
+    width: 40px;
+    height: 40px;
+    border: 2px solid hsla(0, 4%, 91%, 0.5);
+}
+
+/* for cursor style */
+.cursor-dot,
+.cursor-outline{
+    position:fixed;
+    top: 0;
+    left:0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    /* making cursor clickable */
+    z-index: 1; 
+    pointer-events: none;
+}
+ /* -----------cursor ends */
+header{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    margin-right: 220px;
+    font-size: 2em;
+    color:aquamarine;
+    /* pointer-events: none; */
+}
+
+.logo:hover{
+    color:aliceblue;
+}
+
+.navigation a{
+    text-decoration: none;
+    color:aquamarine;
+    Padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 20px;
+    font-weight: 600;
+}
+
+.navigation a:hover, 
+.navigation a.active{
+    background-color: aquamarine;
+    color:whitesmoke;
+}
+
+.Parallax{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#text{
+    position:absolute;
+    font-size: 5em;
+    color:aliceblue;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.2);
+}
+
+#text:hover{
+    font-size:5.2em;
+}
+
+/* --------all images are together--------------------- */
+.Parallax img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.sec{
+ position:relative;
+    background: #003329;
+    padding: 100px;
+
+}
+
+.sec h2 {
+    font-size: 3em;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.sec p{
+    font-size: 1em;
+    color:white;
+    font-weight: 300;
+}
